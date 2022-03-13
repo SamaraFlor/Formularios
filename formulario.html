@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+   
+    <html lang="pt-br">
+
+
+	<head>
+		<title>Formulario de Avaliação</title>
+		<meta charset="UTF-8">
+	</head>
+
+
+	<body>
+		<h2>Avaliar</h2>
+
+		<form method="post">
+			<table border="0" cellspacing="0" cellpadding="5">
+				<tr>
+					<td>Nome Completo</td>
+					<td>
+                        
+                              <input type="text" 
+					           placeholder="Entre seu nome"
+							   size="20"
+							   maxlength="20"
+					           id="campoNome" 
+							   name="campoNome"
+							   required>
+                     </td>
+				</tr>
+
+				<tr>
+					<td>Senha</td>
+					<td><input type="password" 
+					           placeholder="Digite a sua senha"
+					           id="campoSenha" 
+							   name="campoSenha"
+							   required>
+                    </td>
+				</tr>
+
+				<tr>
+					<td>O professor consegue passar o conteúdo?</td>
+					<td>
+						<input id="campoProfessor" name="campoProfessor" type="radio" value="0">sim
+						<input id="campoProfessor" name="campoProfessor" type="radio" value="1" checked>não
+					
+					</td>
+				</tr>
+
+                <tr>
+					<td>O professor tem o conhecimento necessario?</td>
+					<td>
+						<input id="campoProfessor" name="campoProfessor" type="radio" value="0">sim
+						<input id="campoProfessor" name="campoProfessor" type="radio" value="1" checked>não
+					
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>O material</td>
+					<td>
+						<input id="Campomat" name="Campomat" type="checkbox" value="B" checked>Bom
+						<input id="Campomat" name="Campomat" type="checkbox" value="R">Ruim
+						<input id="Campomat" name="Campomat" type="checkbox" value="A" checked>Adequado
+					</td>
+				</tr>
+
+				<tr>
+					<td>Atividade em Equipe</td>
+					<td>
+						<textarea placeholder="coloque algo aqui" id="CampoObs" name="campoObs" cols="100" rows="10"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>Onde nos encontrou?</td>
+					<td>
+						<select name="campolocal" id="campolocal">
+							<option>Grupo de Amigos
+							<option selected>Faculdade
+							<option>Linkedin
+							<option>Outra rede social 
+						</select>
+					</td>
+
+				</tr>
+
+                <tr>
+					<td>Deixe o seu Comentario</td>
+					<td>
+						<textarea placeholder="coloque algo aqui" id="CampoOb" name="campoOb" cols="200" rows="10"></textarea>
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>Data e Hora</td>
+					<td><input type = "datetime-local" name = "campoDataHora"/></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Limpar">
+		</form>
+	</body>
+</html>
